@@ -10,3 +10,19 @@ export const getPostAll = (salvarPost)=>{
     })
     .catch((err)=>{console.log(err.response)})
 }
+
+export const createComment = (postId, comment) => {
+    const body = {
+      'postId': postId,
+      'comment': comment
+    };
+  
+    axios.post(`${BASE_URL}/comment/create`, body, { headers: { Authorization: token } })
+      .then((response) => {
+        getPostAll()
+  
+      })
+      .catch((error) => {
+        console.error("Erro ao criar o comentário:", error);
+      });
+  };
