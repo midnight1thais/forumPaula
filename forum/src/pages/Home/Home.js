@@ -1,6 +1,6 @@
-
+import Menu from "../../componentes/Menu/Menu";
 import HeaderPerfil from "../../componentes/Header/HeaderPerfil";
-
+import Card from "../../componentes/Card/Card"
 import { SectionStyle } from "./style";
 
 
@@ -16,10 +16,10 @@ function Home() {
             <HeaderPerfil />
 
             <SectionStyle>
-                {/* <Menu />
+                <Menu />
                 <Card />
 
-                <Historicos /> */}
+                {/* <Historicos /> */}
 
             </SectionStyle>
 
